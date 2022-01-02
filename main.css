@@ -1,0 +1,227 @@
+    @keyframes color-shadow {
+        0% {
+            transform: skew( .05deg, 0deg);
+            text-shadow: 0.43899242px 0 1px rgb(0 30 255 / 10%), -0.43899242px 0 1px rgb(255 0 80 / 10%), 0 0 5px rgb(140 230 5 / 30%);
+        }
+        5% {
+            transform: skew( -0.05deg, 0deg);
+            text-shadow: 2.7928974px 0 1px rgb(0 30 255 / 10%), -2.7928974px 0 1px rgb(255 0 80 / 10%), 0 0 6px rgb(140 230 5 / 34%);
+        }
+        10% {
+            transform: skew( .05deg, 0deg);
+            text-shadow: 0.02956276px 0 1px rgb(0 30 255 / 10%), -0.02956276px 0 1px rgb(255 0 80 / 10%), 0 0 7px rgb(140 230 5 / 36%);
+        }
+        15% {
+            transform: skew( 0deg, 0);
+            text-shadow: 0.40218539px 0 1px rgb(0 30 255 / 10%), -0.40218539px 0 3px rgb(255 0 80 / 10%), 0 0 8px rgba(230, 5, 219, 0.486);
+        }
+        20% {
+            text-shadow: 3.47940379px 0 1px rgb(0 30 255 / 10%), -3.47940379px 0 3px rgb(255 0 80 / 10%), 0 0 9px rgba(230, 5, 230, 0.4);
+        }
+        25% {
+            text-shadow: -1.61256304px 0 1px rgb(0 30 255 / 10%), 1.61256304px 0 1px rgb(255 0 80 / 15%), 0 0 10px rgb(140 230 5 / 42%);
+        }
+        30% {
+            text-shadow: 0.70155901px 0 1px rgb(0 30 255 / 10%), -0.70155901px 0 1px rgb(255 0 80 / 20%), 0 0 11px rgba(251, 255, 0, 0.616);
+        }
+        35% {
+            text-shadow: 3.89691405px 0 1px rgb(0 30 255 / 10%), -3.89691405px 0 1px rgb(255 0 80 / 30%), 0 0 10px rgb(140 230 5 / 42%);
+        }
+        40% {
+            text-shadow: 3.87090561px 0 1px rgb(0 30 255 / 10%), -3.87090561px 0 1px rgb(255 0 80 / 40%), 0 0 9px rgb(140 230 5 / 40%);
+        }
+        45% {
+            text-shadow: 2.23105696px 0 2px rgb(0 30 255 / 15%), -2.23105696px 0 1px rgb(255 0 80 / 45%), 0 0 8px rgb(140 230 5 / 38%);
+        }
+        50% {
+            text-shadow: 0.0808429px 0 3px rgb(0 30 255 / 15%), -0.0808429px 0 1px rgb(255 0 80 / 50%), 0 0 7px rgb(140 230 5 / 36%);
+        }
+        55% {
+            text-shadow: 2.37584611px 0 4px rgb(0 30 255 / 20%), -2.37584611px 0 2px rgb(255 0 80 / 40%), 0 0 6px rgb(140 230 5 / 33%);
+        }
+        60% {
+            text-shadow: 2.20219305px 0 5px rgb(0 30 255 / 30%), -2.20219305px 0 3px rgb(255 0 80 / 30%), 0 0 5px rgb(140 230 5 / 32%);
+        }
+        65% {
+            text-shadow: -3.86387806px 0 4px rgb(0 30 255 / 40%), 2.86387806px 0 4px rgb(255 0 80 / 20%), 0 0 5px rgb(140 230 5 / 31%);
+        }
+        70% {
+            text-shadow: 0.48874025px 0 3px rgb(0 30 255 / 50%), -0.48874025px 0 5px rgb(255 0 80 / 20%), 0 0 5px rgb(140 230 5 / 30%);
+        }
+        75% {
+            text-shadow: -4.89484913px 0 2px rgb(0 30 255 / 60%), -0.89484913px 0 4px rgb(255 0 80 / 15%), 0 0 5px rgb(140 230 5 / 30%);
+        }
+        80% {
+            text-shadow: 0.08330373px 0 1px rgb(0 30 255 / 50%), -0.08330373px 0 3px rgb(255 0 80 / 15%), 0 0 5px rgb(140 230 5 / 30%);
+        }
+        85% {
+            text-shadow: 0.09769827px 0 1px rgb(0 30 255 / 40%), -0.09769827px 0 2px rgb(255 0 80 / 10%), 0 0 5px rgba(0, 255, 242, 0.3);
+        }
+        90% {
+            text-shadow: -3.44333976px 0 10px rgb(0 30 255 / 30%), 6.44333976px 0 1px rgb(255 0 80 / 10%), 0 0 5px rgba(5, 230, 174, 0.548);
+        }
+        95% {
+            text-shadow: 2.18418389px 0 10px rgb(0 30 255 / 20%), -2.18418389px 0 1px rgb(255 0 80 / 10%), 0 0 5px rgb(140 230 5 / 30%);
+        }
+        100% {
+            text-shadow: 2.62087645px 0 1px rgb(0 30 255 / 10%), -2.62087645px 0 1px rgb(255 0 80 / 10%), 0 0 5px rgb(140 230 5 / 30%);
+        }
+    }
+    
+    @keyframes appear {
+        0% {
+            top: 200px;
+            opacity: 0;
+        }
+        100% {
+            top: 0px;
+            opacity: 1;
+        }
+    }
+    
+    @font-face {
+        font-family: conthrax;
+        src: url(/font/conthrax-sb.ttf);
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: ocra;
+        src: url(/font/OcrA.ttf);
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    body {
+        background-color: black;
+        color: white;
+        font-family: 'ocra', sans-serif;
+    }
+    
+    body>section {
+        margin: 10vh
+    }
+    
+    header {
+        position: sticky;
+        top: 0;
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 50;
+    }
+    
+    header.mini img {
+        max-height: 60px
+    }
+    
+    header img {
+        max-width: 40vw;
+        transition: 0.2s
+    }
+    
+    header.mini img {
+        max-width: 20vw
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'conthrax', sans-serif;
+        text-transform: uppercase;
+        text-shadow: 0px 0px 0px red;
+    }
+    
+    h1 {
+        font-size: 46px;
+        animation: color-shadow 8s infinite;
+        transform: skew(0deg);
+    }
+    
+    .green {
+        color: #8ce605;
+    }
+    
+    div.hero {
+        margin: 5vh;
+    }
+    
+    section {
+        position: relative;
+        opacity: 0;
+        transition: 0.3s;
+        left: -35vw;
+        color: #8ce605
+    }
+    
+    section.visible {
+        left: 5vw;
+        opacity: 1;
+        color: white
+    }
+    
+    button,
+    a {
+        cursor: pointer;
+    }
+    
+    button.rounded {
+        font-family: 'conthrax', sans-serif;
+        border: 2px solid #8ce605;
+        background-color: transparent;
+        color: #8ce605;
+        transition: 0.7s ease-in-out;
+        text-transform: uppercase;
+        padding: 40px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-radius: 40px;
+    }
+    
+    button.round {
+        font-family: 'conthrax', sans-serif;
+        border: 2px solid #8ce605;
+        background-color: transparent;
+        color: #8ce605;
+        transition: 0.7s ease-in-out;
+        text-transform: uppercase;
+        padding: 20px;
+        border-radius: 50%;
+    }
+    
+    button.rounded:hover,
+    button.round:hover {
+        border: 2px solid #8ce605;
+        background-color: #8ce605;
+        color: black!important;
+    }
+    
+    .card {
+        background-color: rgba(161, 162, 230, 0.144);
+        text-align: center;
+        padding: 60px;
+        margin-top: 5vh;
+    }
+    
+    aside>div {
+        position: relative;
+        margin: 5vh
+    }
+    
+    div.card::before {
+        position: absolute;
+        left: 15px;
+        top: 15px;
+        border-top: 2px solid#8ce605;
+        border-left: 2px solid#8ce605;
+        width: 10px;
+        height: 10px;
+        content: " ";
+        box-shadow: -4px -4px 2px#8ce6052c;
+    }
