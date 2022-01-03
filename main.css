@@ -93,6 +93,13 @@
         font-style: normal;
     }
     
+    @font-face {
+        font-family: me;
+        src: url(/font/me.woff);
+        font-weight: normal;
+        font-style: normal;
+    }
+    
     body {
         background-color: black;
         color: white;
@@ -124,7 +131,7 @@
     }
     
     header.mini img {
-        max-width: 20vw
+        max-width: 30vw
     }
     
     h1,
@@ -152,6 +159,10 @@
         margin: 5vh;
     }
     
+    div.hero h1 {
+        min-height: 25vh;
+    }
+    
     section {
         position: relative;
         opacity: 0;
@@ -161,9 +172,13 @@
     }
     
     section.visible {
-        left: 5vw;
+        left: 1vw;
         opacity: 1;
         color: white
+    }
+    
+    section p {
+        padding-left: -20vh;
     }
     
     button,
@@ -182,17 +197,21 @@
         padding-top: 20px;
         padding-bottom: 20px;
         border-radius: 40px;
+        box-shadow: 0px 0px 0px green;
     }
     
     button.round {
-        font-family: 'conthrax', sans-serif;
-        border: 2px solid #8ce605;
+        font-family: 'me', sans-serif;
+        border: 3px solid #8ce605;
         background-color: transparent;
         color: #8ce605;
         transition: 0.7s ease-in-out;
         text-transform: uppercase;
-        padding: 20px;
+        width: 40px;
+        height: 40px;
         border-radius: 50%;
+        box-shadow: 0px 0px 0px green;
+        content: "//"
     }
     
     button.rounded:hover,
@@ -200,13 +219,23 @@
         border: 2px solid #8ce605;
         background-color: #8ce605;
         color: black!important;
+        box-shadow: 0px 0px 10px green;
     }
     
     .card {
+        position: relative;
         background-color: rgba(161, 162, 230, 0.144);
         text-align: center;
         padding: 60px;
         margin-top: 5vh;
+        transition: 0.2s;
+        opacity: 0;
+        top: -80px;
+    }
+    
+    .card.visible {
+        opacity: 1;
+        top: 0px
     }
     
     aside>div {
@@ -224,4 +253,45 @@
         height: 10px;
         content: " ";
         box-shadow: -4px -4px 2px#8ce6052c;
+    }
+    
+    footer {
+        text-align: center;
+        margin-top: 25vh;
+        font-size: 0.8em;
+        ;
+    }
+    
+    .social-bar ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .social-bar a {
+        color: #8ce605;
+        margin: 1vw;
+        text-decoration: dashed;
+        font-size: 1.8em;
+    }
+    
+    .social-bar a.youtube::after {
+        font-family: "me";
+        content: "\ea9d"
+    }
+    
+    .social-bar a.tweeter::after {
+        font-family: "me";
+        content: "\ea96"
+    }
+    
+    .social-bar a.linkedin::after {
+        font-family: "me";
+        content: "\eaca"
+    }
+    
+    .social-bar a.github::after {
+        font-family: "me";
+        content: "\eab0"
     }
